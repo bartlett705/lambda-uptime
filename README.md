@@ -1,20 +1,8 @@
-## Dump your SNS topics to Discord
-
-_aka Use Discord as a(n) SNS Subscription Protocol_
+## Get uptime updates in discord
 
 ### Usage:
 
-- Clone ☝️
-- Create an empty node lambda called `sns-to-discord-firehose`, set the handler to `index.hose` (or modify `scripts/deploy.sh` and `index.js` to suit).
-- Add your discord token and channel ID to the lambda environment as `DISCORD_TOKEN`, `DISCORD_CHANNEL`.
-- Ensure your aws cli is configured with a role that has `AWSLambdaFullAccess` (for deployment).
-- Run `./scripts/deploy.sh`.
-- Configure an SNS topic to deliver to the lambda.
-- Profit!
-
-### TODO (if anyone wants it, or I end up 'needing' it)
-
-- [ ] Make channel destination, name, and avatar URL configurable on a per-topic basis via environment variable 🗒
-- [ ] add build to bundle prod assets only for deploy 🔧
-- [ ] revert to typescript 😎
-- [ ] add tests 👼
+- Run [this uptime service](https://github.com/bartlett605/uptime) on ythe box you want monitored.
+- Set up a Lambda with the environment variables expected in the `index.js` handler.
+- Upload the handler. If your AWS CLI is configured, you can use `scripts/deploy.sh function-name`
+- Confgure the lambda to trigger regularly using a Cloudwatch Event or other event source.

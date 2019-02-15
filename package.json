@@ -1,14 +1,14 @@
 {
-  "name": "lambda-discord-firehose",
+  "name": "lambda-uptime",
   "version": "0.2.1",
-  "description": "Turns SNS => discord message",
+  "description": "hits uptime endpoint => discord",
   "main": "index.ts",
   "scripts": {
     "test": "jest"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/bartlett705/lambda-discord-firehose.git"
+    "url": "git+ssh://git@github.com/bartlett705/lambda-uptime.git"
   },
   "keywords": [
     "lambda",
@@ -18,9 +18,9 @@
   "author": "Ahmad K",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bartlett705/lambda-discord-firehose/issues"
+    "url": "https://github.com/bartlett705/lambda-uptime/issues"
   },
-  "homepage": "https://github.com/bartlett705/lambda-discord-firehose#readme",
+  "homepage": "https://github.com/bartlett705/lambda-uptime#readme",
   "dependencies": {
     "node-fetch": "^2.3.0"
   },
