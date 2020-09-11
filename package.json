@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/bartlett705/lambda-uptime#readme",
   "dependencies": {
-    "node-fetch": "^2.3.0"
+    "node-fetch": "^2.6.1"
   },
   "devDependencies": {
     "dotenv": "^6.2.0",
